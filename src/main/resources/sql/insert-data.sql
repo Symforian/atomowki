@@ -29,10 +29,10 @@ INSERT INTO StudentBooks(StudentId,BookId,DateBorrowing,DateReturn,StatusBorrowi
 
 INSERT INTO StudentScore(StudentId,SubjectId,ProfessorId,Score,Date)VALUES(1,1,1,CAST('3.5' AS FLOAT),'2022-01-06')
 
-INSERT INTO Schedule(Id,ClassId,Year,Semestr)VALUES(1,1,2021,3)
+INSERT INTO Schedule(Id,ClassId,Year,Semester)VALUES(1,1,2021,3)
 
 INSERT INTO ScheduleSubject(SubjectId,ScheduleId,StartTime,EndTime)VALUES(1,1,current_timestamp,current_timestamp)
 
-INSERT INTO Bill(Id,StudentId,Description,Ammount,Date)VALUES(1,1,'For study',1000.50,'2021-10-01')
+INSERT INTO Bill(Id,StudentId,Description,Amount,Date)VALUES(1,1,'For study',1000.50,'2021-10-01')
 
-INSERT INTO Payment(BillId,Ammount,Date)VALUES(1,550.44,'2022-01-11')
+INSERT INTO Payment(BillId,Amount,Date)VALUES(1,550.44,'2022-01-11')
