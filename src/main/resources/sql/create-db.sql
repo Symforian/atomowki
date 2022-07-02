@@ -97,7 +97,7 @@ CREATE TABLE Bill(
                      Id int Not null,
                      StudentId int Not null,
                      Description varchar(100) not NULL,
-                     Ammount Decimal Not null,
+                     Amount Decimal Not null,
                      Date datetime NOT NULL,
                      PRIMARY KEY (Id),
                      CONSTRAINT FK_Bill_Student FOREIGN KEY (StudentId) REFERENCES Student(Id)
@@ -105,7 +105,7 @@ CREATE TABLE Bill(
 
 CREATE TABLE Payment(
                         BillId int Not null,
-                        Ammount Decimal Not null,
+                        Amount Decimal Not null,
                         Date datetime NOT NULL,
                         CONSTRAINT FK_Payment_Bill FOREIGN KEY (BillId) REFERENCES Bill(Id)
 )
