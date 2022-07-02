@@ -68,9 +68,9 @@ CREATE TABLE Schedule(
                          Id int Not null,
                          ClassId int Not null,
                          Year int not NULL,
-                         Semestr int not NULL,
+                         Semester int not NULL,
                          PRIMARY KEY (Id),
-                         CONSTRAINT FK_Schedule_Class FOREIGN KEY (ClassId) REFERENCES Class(Id)
+                         CONSTRAINT FK_Schedule_Class FOREIGN KEY (ClassId) REFERENCES Class(Id),
 );
 
 CREATE TABLE StudentScore(
